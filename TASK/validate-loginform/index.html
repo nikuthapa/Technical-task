@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login Form</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<img style="display: inline;" src="logo.png" alt="logo" />
+		<form class="login-form" action="logged_in.html" method="post" name="form" onsubmit="return validation()">
+			<div class="font"></div>
+			<input autocomplete="off" type="text" name="email" autofocus placeholder="Email Address*">
+			<div id="error1">Please fill up email address.Email address must be at least 9 characters long.</div>
+			<div class="font font2"></div>
+			<input type="password" name="password" autofocus placeholder="Password*">
+			<div id="error2">Please fill up password.Password must be at least 6 characters long.</div>
+			<button class="submit">LOGIN</button>
+			<p class="text-form">
+				<a href="#" class="link-form">Forgot password?</a>
+			</p>
+		</form>
+	</div>
+	<script src="validation.js"></script>
+</body>
+</html>

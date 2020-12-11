@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Technical Test for Internship</title>
+</head>
+<body>
+	<p id="test"></p>
+	<script type="text/javascript">
+		var div = 2; //declaring variable div (divisor) with var keyword.
+		var num = 600851475143; //declaring variable num (number) with var keyword.
+			while(num >= 2){ // when the number is greater than and equal to 2.
+    			if(num % div === 0){ // if the number is evenly divisible by the divisor.
+        			num = num / div; 
+        			/*divide the number by the divisor. 
+        			(We can also use num /= div)*/
+    			} 
+    			else {
+        			div++; //else it increases the divisor
+    			}
+			}
+		document.getElementById('test').innerHTML = "The largest prime factor of the number 600851475143 is " +  div + "."; 
+		/*when while loops ends,  
+		it will give the largest prime factor of the given number which is equal to the divisor.*/
+	</script>
+</body>
+</html>
